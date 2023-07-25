@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --primary-green: #57A773;
+    --secondary-green: #74B97E;
+    --accent-green: #3E7248;
+    --complementary-yellow: #F0D24B;
+    --complementary-blue: #42A9C8;
+}
+
+/* Set the font-family for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-color: var(--primary-green);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 15vh;
+}
+
+main {
+    flex: 1;
+    padding: 1.5em;
+}
+
+footer {
+    height: 15vh;
+}
+
+nav a {
+    color: #fff;
+}
+
+footer {
+    background-color: var(--complementary-blue);
+}
+
+.img-in-box {
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+/* Apply the colors to buttons or other elements as needed */
+button {
+    background-color: var(--accent-green);
+    color: #fff;
+    border: none;
+    font-size: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 80px;
+}
+
+button:hover {
+    background-color: var(--secondary-green);
+}
+
+#masthead {
+    background-color: var(--complementary-yellow);
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 12px;
+    text-align: center;
+    background-image: url(../img/masthead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.tagline h1 {
+    color: white;
+    font-size: 1em;
+}
+
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: inline;
+}
+
+button {
+    z-index: 999;
+}
+
+/* Define the active style for the button */
+#active-button {
+    background-color: var(--secondary-green); /* Green background color */
+    color: #fff; /* White text color */
+  }
+
+#dynamic-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2.4px solid var(--complementary-yellow);
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    border-radius: 12px;
+}
+
+#dynamic-content h1 {
+    font-size: 1.5em;
+}
+
+#dynamic-content p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.image-and-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-in-dynamic {
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+}
+
+footer ul {
+    display: flex;
+    font-size: larger;
+    list-style: none;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Add styles for nav-bar, masthead, main-content, and footer */
+
+/* Media Query for Tablets and Desktops */
+@media screen and (min-width: 30rem) {
+    /* Adjust styles for tablets and desktops */
+    .image-and-content {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+    #dynamic-content {
+        align-items: flex-start;
+    }
+    #dynamic-content h1 {
+        font-size: 2rem;
+    }
+    #dynamic-content p {
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        padding: 2rem 4rem;
+        border-radius: 12px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    footer ul {
+        font-size: 1.5rem;
+    }
+}
+

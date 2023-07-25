@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Green Energy</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<!-- third party font awesome -->
+	<script src="https://kit.fontawesome.com/acbac8cde3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#blog">Blog</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="masthead">
+			<div class="tagline">
+				<h1>Make Green Energy Affordable</h1>
+			</div>
+		</section>
+		<div class="main-wrapper">
+			<div class="buttons">
+				<!-- Make sure button texts match the keys in the resourceObject -->
+				<button data-key="solution1" id="active-button"><i class="fas fa-hand-holding-usd"></i></button>
+				<button data-key="solution2"><i class="fas fa-users"></i></button>
+				<button data-key="solution3"><i class="fas fa-lightbulb"></i></button>
+			</div>
+			<div id="dynamic-content">
+				<!-- Content for Solution 1 (Default content on page load) -->
+				<h1>Government Subsidies and Incentives:</h1>
+				<div class="image-and-content">
+					<div class="image-in-dynamic">
+						<img class="img-in-box" src="./img/govImg.jpg" alt="Image 1">
+					</div>
+					<p>Governments can provide financial subsidies and incentives to promote the adoption of clean energy
+						sources. This can include tax credits, grants, and rebates for individuals and businesses that
+						invest in renewable energy technologies such as solar panels, wind turbines, and energy-efficient
+						appliances. By reducing the upfront costs of clean energy installations, more people can afford to
+						make the switch.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<ul>
+			<li><a href="#" class="social-icon"><i class="fa-brands fa-pinterest" style="color: #e50218;"></i></a></li>
+			<li><a href="#" class="social-icon"><i class="fa-brands fa-facebook" style="color: #0077b5;"></i></a></li>
+			<li><a href="#" class="social-icon"><i class="fa-brands fa-youtube" style="color: #ea3223;"></i></a></li>
+		</ul>
+	</footer>
+
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
